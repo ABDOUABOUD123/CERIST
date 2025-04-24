@@ -1,0 +1,149 @@
+.saved-articles-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .saved-articles-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .saved-articles-header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .header-icon {
+    margin-right: 0.8rem;
+    color: #4a6fa5;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: #333;
+    position: absolute;
+    left: 0;
+  }
+  
+  .bookmark-count {
+    position: absolute;
+    right: 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .bookmarks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .bookmark-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .bookmark-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-title {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1.1rem;
+  }
+  
+  .article-date {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .article-icon {
+    color: #4a6fa5;
+    font-size: 1.2rem;
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .empty-icon {
+    color: #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  .empty-state h3 {
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .empty-state p {
+    color: #777;
+    margin-bottom: 1.5rem;
+  }
+  
+  .browse-btn, .login-btn {
+    background: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  .browse-btn:hover, .login-btn:hover {
+    background: #3a5a80;
+  }
+  
+  .auth-message {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .auth-message h2 {
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .saved-articles-container {
+      padding: 1rem;
+      margin: 1rem auto;
+    }
+  
+    .saved-articles-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .bookmark-item {
+      padding: 1rem;
+    }
+  }
